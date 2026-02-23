@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Emanuel</title>
+    
+    <!-- Fontes Google (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Ícones (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Link para o SEU arquivo CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navegação -->
+    <header>
+        <a href="#" class="logo"><i class="fas fa-code"></i> Emanuel.DEV</a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="search-icon">
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section (Destaque) -->
+    <section id="home">
+        <div id="particles-js"></div>
+        
+        <div class="hero-content">
+            <h1 class="reveal-top">Emanuel <span class="typewriter">Almeida</span></h1>
+            <p class="reveal-bottom">DESENVOLVEDOR FULL STACK & Estudante Engenharia de Software</p>
+            <a href="#projects" class="btn reveal-bottom">Ver Projetos</a>
+        </div>
+    </section>
+
+    <!-- Seção de Projetos -->
+<section id="projects">
+    <h2 class="section-title reveal-top">MEUS PROJETOS</h2>
+    <div class="projects-grid">
+    <!-- Projeto 1: E-commerce -->
+    <a href="https://maelycristina.com.br/" target="_blank" class="project-card reveal-left">
+        <i class="fas fa-shopping-cart"></i> 
+        <h3>Loja E-commerce</h3>
+        <p>Desenvolvimento de um site e-commerce de moda feminina com foco em usabilidade e experiência do usuário.</p>
+    </a>
+
+    <!-- Projeto 2: Advocacia -->
+    <a href="https://emanuelgda.github.io/Site--ADV.A.MELO-M.GOMES/" target="_blank" class="project-card reveal-bottom">
+        <i class="fas fa-balance-scale"></i>
+        <h3>Landing Page Advocacia</h3>
+        <p>Landing page para escritório de advocacia com design moderno, foco em conversão e total responsividade.</p>
+    </a>
+
+    <!-- Projeto 3: Portfólio -->
+    <a href="https://emanuelgda.github.io/EmanuelGdA.Portf-lio/" target="_blank" class="project-card reveal-right">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Meu Portfólio</h3>
+        <p>Meu portfólio pessoal desenvolvido com HTML, CSS e JavaScript, focado em apresentar meus projetos de forma profissional.</p>
+    </a>
+</div>
+</section>
+
+    <!-- Seção Sobre -->
+    <section id="about">
+        <h2 class="section-title reveal-top">SOBRE MIM</h2>
+        <div class="about-container">
+            <div class="about-img reveal-left">
+                <img src="assets/perfil.jpg" alt="Foto de Perfil">
+            </div>
+
+            <div class="about-text reveal-right">
+                <p>
+                    <strong>Olá! Eu sou o Emanuel.</strong> Sou apaixonado por tecnologia e inovação. 
+                    Comecei minha jornada em 2025 e desde então venho criando soluções digitais.
+                </p>
+                <p>
+                    Meu objetivo é transformar ideias complexas em interfaces simples e funcionais.
+                    Gosto de café, códigos limpos e aprender novas tecnologias.
+                </p>
+                
+                <div class="skills-container">
+                    <h3>Tecnologias:</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">HTML & CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+
+                <a href="#contact" class="btn" style="margin-top: 20px;">Entrar em Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contato (EDITADO AQUI) -->
+    <section id="contact">
+        <h2 class="section-title">FALE COMIGO</h2>
+        <div class="contact-content">
+            <p>Tem uma ideia incrível? Vamos tirar ela do papel.</p>
+            
+            <!-- Link que força a abertura do Gmail no navegador -->
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=emanuelgomesalmeida@gmail.com&su=Contato%20pelo%20Portfólio" target="_blank" class="btn">Enviar E-mail</a>
+            
+            <div class="social-links">
+                <a href="https://github.com/EmanuelGdA" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/emanuel.software/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Emanuel. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP (TURBINADO) -->
+<a href="https://wa.me/5541999949757?text=Olá%20Emanuel,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar!" 
+   class="whatsapp-link" 
+   target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Vamos conversar?</span>
+</a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
