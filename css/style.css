@@ -157,15 +157,16 @@ section {
     border-radius: 2px;
 }
 
-/* Projetos */
+/* --- Seção de Projetos (Versão Corrigida para GitHub) --- */
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 
-/* Estilo do Card de Projeto */
-.project-card {
+/* Estilo do Card (que agora é um link <a>) */
+a.project-card {
     background: var(--card-bg);
     padding: 30px;
     border-radius: 15px;
@@ -173,43 +174,48 @@ section {
     transition: 0.3s;
     position: relative;
     overflow: hidden;
-    
-    /* ESSAS LINHAS RESOLVEM O PROBLEMA DA COR AZUL */
-    text-decoration: none; /* Remove o sublinhado */
-    color: var(--text-color); /* Força o texto a ser branco */
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    align-items: flex-start;
     text-align: left;
+    
+    /* Remove decorações de link padrão de forma agressiva */
+    text-decoration: none !important;
+    color: var(--text-color) !important;
 }
 
-/* Quando passar o mouse no card */
+/* Garante que o link não mude de cor após ser clicado (importante para o bug do GitHub) */
+a.project-card:visited, 
+a.project-card:active, 
+a.project-card:link {
+    text-decoration: none !important;
+    color: var(--text-color) !important;
+}
+
 .project-card:hover {
     transform: translateY(-10px);
     border-color: var(--accent-color);
     box-shadow: 0 10px 30px rgba(0, 225, 255, 0.2);
 }
 
-/* Ajustando o título dentro do card */
-.project-card h3 {
-    margin-bottom: 15px;
-    font-size: 1.5rem;
-    color: var(--accent-color); /* Título na cor neon */
-}
-
-/* Ajustando o ícone para não ficar com cor de link */
 .project-card i {
     font-size: 2.5rem;
     color: var(--accent-color);
     margin-bottom: 20px;
 }
 
-/* Ajustando a descrição */
+.project-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: var(--accent-color) !important; /* Força o título a ser neon */
+    text-decoration: none !important;
+}
+
 .project-card p {
-    color: var(--text-secondary);
+    color: var(--text-secondary) !important;
     font-size: 0.95rem;
     line-height: 1.6;
-    text-decoration: none !important; /* Garante que não tenha sublinhado */
+    text-decoration: none !important;
 }
 
 /* Sobre e Foto */
